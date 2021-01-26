@@ -1,0 +1,17 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+.div_parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.div{
+    width: 50%;
+}
+.centred-img {
+    width: 100%;
+}
