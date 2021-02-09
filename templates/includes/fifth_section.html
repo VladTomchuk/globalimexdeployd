@@ -1,0 +1,32 @@
+{% load static %}
+{% load static i18n %}
+
+<div class="test_div">
+    <div class="title title_sec5 wow bounceInLeft" data-wow-duration="1s">
+        <h2>
+            {% trans 'Storage' %}
+        </h2>
+    </div>
+    <div class="container_div_test">
+        <div class="ellipse_left_sec5 wow bounceInLeft" data-wow-duration="3s">
+            <img src="{% static 'img/seccion_5/ellipse_left_sec5.svg' %}" alt="">
+        </div>
+        <div class="ellipse_right_sec5 wow bounceInLeft" data-wow-duration="3s">
+            <img src="{% static 'img/seccion_5/ellipse_right_sec5.svg' %}" alt="">
+        </div>
+        <div class="container_test wow bounceInDown" data-wow-duration="3s">
+            <img src="{% static 'img/seccion_5/container_dev_1.png' %}" alt="">
+        </div>
+        <div class="glass_box_sec5 wow bounceInUp" data-wow-duration="3s">
+            <p>
+                {% blocktrans trimmed %}
+                    As an entrepreneur, you do not need to worry about storing a large amount of cargo.
+                    Our company offers services for complex, warehouse storage of goods. We formulate placement
+                    conditions
+                    suitable for each product.
+                    We provide services: packaging, loading and unloading, timely paperwork.
+                {% endblocktrans %}
+            </p>
+        </div>
+    </div>
+</div>

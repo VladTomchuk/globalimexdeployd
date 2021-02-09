@@ -1,0 +1,55 @@
+{% load static %}
+{% load static i18n %}
+{% load flags %}
+{% get_current_language as language %}
+
+<nav id="navbar" class="navbar navbar-expand-xl navbar-dark fixed-top wow fadeIn">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">
+        <img src="{% static 'logo/logo_largo_blanco.svg' %}" alt="">
+    </a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
+            onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-around" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="links-word">
+                <ul>
+                    <li class="nav-item">
+                        <a href="#Our_company">
+                            {% trans 'OUR COMPANY' %}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Products">
+                            {% trans 'PRODUCTS' %}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Services">
+                            {% trans 'SERVICES' %}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Contacts">
+                            {% trans 'CONTACT US' %}
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <div class="dropdown">
+                <a class="langs-icon"><img src='{% static "img/langs.svg" %}' alt=""></a>
+                <div class="dropdown-content">
+                    <a href="#">{% languages li_class='flags-li' a_class='flags-a' %}</a>
+                </div>
+            </div>
+        </ul>
+    </div>
+</nav>

@@ -1,24 +1,28 @@
+{% extends 'carcass_base.html' %}
 {% load static %}
 {% load static i18n %}
+{% load flags %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
-
-    <title>Index-test</title>
-
-</head>
-<body>
-
-<div class="div_parent">
-    <div>
-         <h2>ETM GLOBAL IMEX</h2>
+{% block content %}
+    <div class="first_section-container row m-0 ">
+        {% include '../includes/first_section.html' %}
     </div>
-    <div class="div">
-        <img class="centred-img" src="{% static 'img/2_coming_soon.gif' %}">
+    <div id="Our_company" class="second_section-container m-0">
+        {% include '../includes/second-section/second_section.html' %}
     </div>
-</div>
-</body>
-</html>
+    <div id="Products" class="third_section-container">
+        {% include '../includes/third_section/third_section.html' %}
+    </div>
+    <div id="Services" class="fourth_section-container">
+        {% include '../includes/fourth_section.html' %}
+    </div>
+    <div class="fifth_section-container m-0">
+        {% include '../includes/fifth_section.html' %}
+    </div>
+    <div class="sixth_section-container">
+        {% include '../includes/sixth_section.html' %}
+    </div>
+    <div id="Contacts" class="seventh_section-container">
+        {% include '../includes/seventh_section.html' %}
+    </div>
+{% endblock %}

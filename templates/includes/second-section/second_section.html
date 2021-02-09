@@ -1,0 +1,45 @@
+{% load static %}
+{% load static i18n %}
+
+<div class="title title_sec2 wow bounceInLeft" data-wow-duration="1s" data-wow-offset="200">
+    <h2>
+        {% trans 'Our company' %}
+    </h2>
+</div>
+<div class="modal-div">
+    {% include './inc/_modal-window.html' %}
+</div>
+<div class="second_section-gradient ">
+    <p class="wow fadeInUp">
+        {% blocktrans trimmed %}
+            Our company develops and provides individual logistics solutions for the transportation of cargo, of any
+            size
+            and cargo requiring special transportation conditions.
+            Thanks to direct cooperation with all major co-owners and transport operators, we have a network of reliable
+            partners around the world.
+            A comprehensive project service is available to our clients.
+            Port forwarding. Personal control over the carrying out of loading and unloading work, timely documentation
+            of
+            all internal operations.
+            We help with long-term storage of goods. We also take on the organization and maintenance of customs
+            procedures.
+            We pay special attention to the insurance of your cargo, for the entire period of transportation, regardless
+            of
+            the type of transport used.
+            And professionally executed packaging and correctly selected packing materials will protect the cargo from
+            damage.
+        {% endblocktrans %}
+    </p>
+    <div class="preview_text wow bounceInRight" data-wow-duration="1s" data-wow-offset="200">
+        {% blocktrans trimmed %}
+            Our company develops and provides individual logistics solutions for the transportation of cargo, of any
+            size
+            and cargo requiring special transportation conditions.
+            Thanks to direct cooperation with all major co-owners and transport operators, we have a network of reliable
+            partners around the world...
+        {% endblocktrans %}
+    </div>
+    <div class="wave">
+        <img src="{% static 'img/Vector.svg' %}" alt="">
+    </div>
+</div>

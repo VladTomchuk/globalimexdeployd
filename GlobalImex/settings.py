@@ -13,6 +13,7 @@ import os
 from pathlib import Path
 
 from dotenv import load_dotenv
+
 load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -38,12 +39,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'mainapp.apps.MainappConfig'
+    'mainapp.apps.MainappConfig',
+    'django_translation_flags'
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -105,6 +108,12 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
+LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
+LANGUAGES = [
+    ('en', 'English'),
+    ('es', 'Español')
+]
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'en'
 
 TIME_ZONE = 'UTC'
 
@@ -123,3 +132,13 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'GlobalImex/static/'), ]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587  # 2525
+EMAIL_HOST_USER = 'etmglobalimex.web@gmail.com'
+EMAIL_HOST_PASSWORD = 'Pampararam1212'
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+
+# https://accounts.google.com/b/0/DisplayUnlockCaptcha

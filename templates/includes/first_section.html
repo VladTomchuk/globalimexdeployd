@@ -1,0 +1,30 @@
+{% load static %}
+{% load static i18n %}
+
+<div class="glass wow bounceInLeft" data-wow-duration="2s" data-wow-delay="">
+    <div class="cuttext">
+        etm
+    </div>
+    <div class="glass_text_div">
+        <div class="glass_text">
+            <p>
+                {% blocktrans trimmed %}
+                    We are a logistics company providing services all over the world.
+                {% endblocktrans %}
+            </p>
+        </div>
+    </div>
+
+    <div class="btn_contact_div">
+        <span class="btn_contact-link ">
+            <a href="#Contacts">
+                {% trans 'CONTACT US' %}
+            </a>
+        </span>
+    </div>
+</div>
+<div class="right-side wow fadeInRight" data-wow-duration="2s" data-wow-delay="1s">
+    <div class="no-cuttext">
+        <img src="{% static 'logo/global_imex_white.svg' %}" alt="">
+    </div>
+</div>

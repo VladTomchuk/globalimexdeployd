@@ -1,0 +1,227 @@
+@media only screen and (max-width: 576px) {
+
+    a.langs-icon {
+        display: none !important;
+    }
+
+    ul.navbar-nav .dropdown {
+        display: flex !important;
+    }
+
+    ul.navbar-nav .dropdown,
+    ul.navbar-nav .links-word ul {
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 !important;
+    }
+
+    .links-word ul {
+        align-items: center;
+    }
+
+    .dropdown-content {
+        position: relative !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-item {
+        margin: 5% 0;
+    }
+
+    li.flags-li {
+        padding: 10%;
+    }
+
+    .navbar-brand {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 1300px)  and (orientation: portrait) {
+    a.langs-icon {
+        display: none !important;
+    }
+
+    ul.navbar-nav .dropdown {
+        display: flex !important;
+    }
+
+    ul.navbar-nav .dropdown,
+    ul.navbar-nav .links-word ul {
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 !important;
+    }
+
+    .links-word ul {
+        align-items: center;
+    }
+
+    .dropdown-content {
+        position: relative !important;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .dropdown-content,
+    .nav-item {
+        margin: 4% 0;
+    }
+
+    .navbar-brand {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (orientation: landscape) {
+    .navbar-brand {
+        width: 15%;
+        padding: 0 0 10px 5% !important;
+    }
+
+    .navbar-nav {
+        padding-top: 0 !important;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 30%;
+        padding-right: 4%;
+    }
+
+    ul.navbar-nav .dropdown {
+        display: flex !important;
+    }
+
+    ul.navbar-nav .dropdown,
+    ul.navbar-nav .links-word ul {
+        justify-content: center;
+        padding: 0 !important;
+    }
+
+    .links-word ul {
+        align-items: center;
+    }
+
+    .dropdown-content {
+        position: absolute !important;
+        display: none;
+        top: 100%;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    li.flags-li {
+       margin-top: 100%;
+    }
+}
+
+.links-word ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.links-icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+}
+.dropdown:hover a.langs-icon img{
+     filter: invert(0%) sepia(100%) saturate(6637%) hue-rotate(155deg) brightness(104%) contrast(103%);
+}
+
+.dropdown-content {
+    position: absolute;
+    z-index: 1;
+}
+
+/*------------------MENU BURGER---------------------------*/
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: var(--white-text);
+    margin: 8px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 5px);
+    transform: rotate(-45deg) translate(-8px, 5px);
+    background-color: var(--electrico);
+}
+
+.change .bar2 {
+    opacity: 0;
+    background-color: var(--electrico);
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    background-color: var(--electrico);
+}
+
+/*---------------Languages------------*/
+.flags-li {
+    transition: ease 0.5s;
+}
+
+.flags-li:hover {
+    transform: scale(1.1);
+    transition: ease 0.5s;
+}
+
+/*-------item-&-links-----*/
+li.nav-item a:hover {
+     color: var(--electrico) !important;
+}
+
+li.nav-item a {
+    letter-spacing: 1px;
+    padding: 0.5em 0.8em !important;
+    color: var(--white-text);
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 1em;
+    font-size: 0.8rem;
+}
+
+.fixed-top {
+    background: radial-gradient(128.43% 128.43% at 50.08% -24.37%, rgba(125, 249, 255, 0.63) 6.13%, rgba(26, 153, 181, 0) 99.48%);
+    backdrop-filter: blur(6px);
+}
+
+#navbar {
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+.navbar-nav {
+    padding-top: 10%;
+    transition: all 0.35s ease;
+}
+
+a.navbar-brand {
+    padding: 1%;
+}
+
+.navbar-toggler {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+li.flags-li{
+    transform: scale(1.5,1.5);
+}

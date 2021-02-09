@@ -18,9 +18,15 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
+from mainapp.views import change_language
+
 urlpatterns = [
+    path('i18n/', include('django_translation_flags.urls')),
     path('admin/', admin.site.urls),
     path('', include('mainapp.urls')),
+    path('change_language/',
+         change_language,
+         name='change_language')
 ]
 
 if settings.DEBUG:

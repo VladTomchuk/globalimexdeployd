@@ -1,0 +1,146 @@
+@media only screen and (max-width: 576px) {
+    .footer-container {
+        height: 25vh;
+    }
+
+    .footer_gradient p{
+        font-size: 0.6rem;
+        text-align: center!important;
+        padding: 0!important;
+    }
+
+    .footer_gradient {
+        position: absolute;
+        overflow: hidden;
+        margin-top: 60%;
+        width: 100%;
+    }
+
+    .footer_gradient img {
+        position: relative;
+        width: 100%;
+        margin-top: 0;
+
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 577px) and (min-height: 740px) and (max-height: 850px) {
+    .footer_gradient {
+
+        margin-top:35% !important;
+
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) and (orientation: portrait) {
+    .footer-container {
+        height: 25vh;
+    }
+
+    .footer_gradient {
+        position: absolute;
+        overflow: hidden;
+        margin-top: 15%;
+        width: 100%;
+    }
+
+    .footer_gradient img {
+        position: relative;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .footer_gradient p{
+        font-size: 1rem !important;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) and (orientation: portrait) {
+    .footer-container {
+        height: 25vh;
+    }
+
+    .footer_gradient {
+        position: absolute;
+        overflow: hidden;
+        margin-top: 15%;
+        width: 100%;
+    }
+
+    .footer_gradient img {
+        position: relative;
+        width: 100%;
+        margin-top: 0;
+
+    }
+}
+
+@media only screen and (min-width: 992px) and (orientation: landscape) {
+    .footer-container {
+        height: 25vh;
+    }
+
+    .footer_gradient {
+        position: absolute;
+        overflow: hidden;
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    .footer_gradient img {
+        position: relative;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .footer_gradient p {
+
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1920px) and (orientation: landscape) {
+    .footer-container {
+        height: 25vh;
+    }
+
+    .footer_gradient {
+        position: absolute;
+        overflow: hidden;
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    .footer_gradient img {
+        position: relative;
+        width: 100%;
+        margin-top: 0;
+
+    }
+}
+
+/*!*.footer-container {*!*/
+/*!*    height: 100% !important;*!*/
+/*!*    overflow: hidden;*!*/
+/*!*}*!*/
+
+/*.footer_gradient img {*/
+/*    !*position: relative;*!*/
+/*    !*width: 100%;*!*/
+/*    !*margin-top: 10%;*!*/
+
+/*}*/
+
+.footer_gradient {
+    /*height: 100%;*/
+    background: linear-gradient(0deg, #7DF9FF -74.05%, #010612 93.35%);
+}
+
+.footer_gradient p {
+    margin-top: 3%;
+    padding-left: 15%;
+    color: var(--media-noche);
+    /*font-size: 0.6rem;*/
+    margin-bottom: 0;
+    font-weight: 500;
+}

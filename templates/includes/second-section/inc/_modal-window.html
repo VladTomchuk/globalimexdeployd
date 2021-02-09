@@ -1,0 +1,59 @@
+{% load static %}
+{% load static i18n %}
+
+
+<!-- Button to Open the Modal -->
+<button type="button" class="modal_btn wow bounceIn " data-wow-duration="3s" data-wow-offset="200" data-toggle="modal"
+        data-target="#myModal">
+    read more
+</button>
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">
+                    {% trans 'Our company' %}
+                </h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <p>
+                    {% blocktrans trimmed %}
+                        Our company develops and provides individual logistics solutions for the transportation of
+                        cargo, of any
+                        size
+                        and cargo requiring special transportation conditions.
+                        Thanks to direct cooperation with all major co-owners and transport operators, we have a network
+                        of reliable
+                        partners around the world.
+                        A comprehensive project service is available to our clients.
+                        Port forwarding. Personal control over the carrying out of loading and unloading work, timely
+                        documentation
+                        of
+                        all internal operations.
+                        We help with long-term storage of goods. We also take on the organization and maintenance of
+                        customs
+                        procedures.
+                        We pay special attention to the insurance of your cargo, for the entire period of
+                        transportation, regardless
+                        of
+                        the type of transport used.
+                        And professionally executed packaging and correctly selected packing materials will protect the
+                        cargo from
+                        damage.
+                    {% endblocktrans %}
+                </p>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="modal_btn" data-dismiss="modal">{% trans 'Close' %}</button>
+            </div>
+        </div>
+    </div>
+</div>

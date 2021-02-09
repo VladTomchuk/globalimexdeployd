@@ -1,0 +1,164 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-09 22:07+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\templates\includes\fifth_section.html:7
+msgid "Storage"
+msgstr "Almacenamiento"
+
+#: .\templates\includes\fifth_section.html:22
+msgid ""
+"As an entrepreneur, you do not need to worry about storing a large amount of "
+"cargo. Our company offers services for complex, warehouse storage of goods. "
+"We formulate placement conditions suitable for each product. We provide "
+"services: packaging, loading and unloading, timely paperwork."
+msgstr "Como empresario, no debe preocuparse por almacenar una gran cantidad de carga. Nuestra empresa ofrece servicios para el almacenamiento de mercancías en depósitos complejos. Formulamos colocación condiciones adecuado para cada producto. Brindamos servicios: empaque, carga y descarga, trámites oportunos."
+
+#: .\templates\includes\first_section.html:11
+msgid "We are a logistics company providing services all over the world."
+msgstr "Somos una empresa de logística que brinda servicios en todo el mundo."
+
+#: .\templates\includes\first_section.html:21
+#: .\templates\includes\nav_pannel.html:41
+msgid "CONTACT US"
+msgstr "CONTÁCTENOS"
+
+#: .\templates\includes\footer.html:8
+msgid "All rights copyrights © ETM GLOBAL IMEX 2021</p>"
+msgstr "Todos los derechos de autor © ETM GLOBAL IMEX 2021"
+
+#: .\templates\includes\fourth_section.html:6
+msgid "Transport"
+msgstr "Transporte"
+
+#: .\templates\includes\fourth_section.html:18
+msgid "By sea"
+msgstr "Por mar"
+
+#: .\templates\includes\fourth_section.html:19
+msgid ""
+"The advantage of sea transportation of goods is that there are different "
+"weight categories, which makes this type of transportation incomparable with "
+"other types in terms of its dimensions. Also, this type is the safest."
+msgstr "La ventaja del transporte marítimo de mercancías es que existen diferentes categorías de peso, lo que hace que este tipo de transporte sea incomparable con otros tipos en cuanto a sus dimensiones. Además, este tipo es el más seguro."
+
+#: .\templates\includes\fourth_section.html:34
+msgid "Trucking"
+msgstr "Camionaje"
+
+#: .\templates\includes\fourth_section.html:35
+msgid ""
+"One of the most affordable ways to transport cargo anywhere in the world. "
+"The advantage is that the cargo is not reloaded from one vehicle to another, "
+"thus it is more protected from damage."
+msgstr "Una de las formas más económicas de transportar carga a cualquier parte del mundo. La ventaja es que la carga no se vuelve a cargar de un vehículo a otro, por lo que está más protegida contra daños."
+
+#: .\templates\includes\fourth_section.html:48
+msgid "Air freight"
+msgstr "Flete aéreo"
+
+#: .\templates\includes\fourth_section.html:49
+msgid ""
+"Expedited Transportation of goods, long distances. The advantage is the "
+"shortest transportation time. Possibilities of sending goods by passenger "
+"and cargo flights. Transportation of goods to remote and hard-to-reach "
+"places."
+msgstr "Transporte Acelerado de Mercancías, largas distancias. La ventaja es el menor tiempo de transporte. Posibilidades de envío de mercancías en vuelos de pasajeros y carga. Transporte de mercancías a lugares remotos y de difícil acceso."
+
+#: .\templates\includes\nav_pannel.html:26
+msgid "OUR COMPANY"
+msgstr "NUESTRA EMPRESA"
+
+#: .\templates\includes\nav_pannel.html:31
+#: .\templates\includes\third_section\third_section.html:6
+msgid "PRODUCTS"
+msgstr "PRODUCTOS"
+
+#: .\templates\includes\nav_pannel.html:36
+msgid "SERVICES"
+msgstr "SERVICIOS"
+
+#: .\templates\includes\second-section\inc\_modal-window.html:19
+#: .\templates\includes\second-section\second_section.html:6
+msgid "Our company"
+msgstr "NUESTRA EMPRESA"
+
+#: .\templates\includes\second-section\inc\_modal-window.html:27
+#: .\templates\includes\second-section\second_section.html:14
+msgid ""
+"Our company develops and provides individual logistics solutions for the "
+"transportation of cargo, of any size and cargo requiring special "
+"transportation conditions. Thanks to direct cooperation with all major co-"
+"owners and transport operators, we have a network of reliable partners "
+"around the world. A comprehensive project service is available to our "
+"clients. Port forwarding. Personal control over the carrying out of loading "
+"and unloading work, timely documentation of all internal operations. We help "
+"with long-term storage of goods. We also take on the organization and "
+"maintenance of customs procedures. We pay special attention to the insurance "
+"of your cargo, for the entire period of transportation, regardless of the "
+"type of transport used. And professionally executed packaging and correctly "
+"selected packing materials will protect the cargo from damage."
+msgstr "Nuestra empresa desarrolla y brinda soluciones logísticas individuales para el transporte de carga, de cualquier tamaño y carga que requiera condiciones especiales de transporte. Gracias a la cooperación directa con los principales copropietarios y operadores de transporte, tenemos una red de socios fiables en todo el mundo. Nuestros clientes disponen de un servicio integral de proyectos. Reenvío de puertos. Control personal sobre la realización de trabajos de carga y descarga, documentación oportuna de todas las operaciones internas. Ayudamos con el almacenamiento de mercancías a largo plazo. También nos encargamos de la organización y mantenimiento de los trámites aduaneros. Prestamos especial atención al seguro de su carga, durante todo el período de transporte, independientemente del tipo de transporte utilizado. Y el embalaje ejecutado profesionalmente y los materiales de embalaje seleccionados correctamente protegerán la carga de daños."
+
+#: .\templates\includes\second-section\inc\_modal-window.html:55
+msgid "Close"
+msgstr "Cerrar"
+
+#: .\templates\includes\second-section\second_section.html:34
+msgid ""
+"Our company develops and provides individual logistics solutions for the "
+"transportation of cargo, of any size and cargo requiring special "
+"transportation conditions. Thanks to direct cooperation with all major co-"
+"owners and transport operators, we have a network of reliable partners "
+"around the world..."
+msgstr "Nuestra empresa desarrolla y brinda soluciones logísticas individuales para el transporte de carga, de cualquier tamaño y carga que requiera condiciones especiales de transporte. Gracias a la cooperación directa con los principales copropietarios y operadores de transporte, tenemos una red de socios fiables en todo el mundo..."
+
+#: .\templates\includes\seventh_section.html:10
+msgid "Contact us"
+msgstr "CONTÁCTENOS"
+
+#: .\templates\includes\seventh_section.html:53
+msgid "Name"
+msgstr "Nombre"
+
+#: .\templates\includes\seventh_section.html:58
+msgid "Telephone"
+msgstr "Teléfono"
+
+#: .\templates\includes\seventh_section.html:62
+msgid "Email"
+msgstr "Email"
+
+#: .\templates\includes\seventh_section.html:67
+msgid "Comment"
+msgstr "Comentario"
+
+#: .\templates\includes\seventh_section.html:71
+msgid "Send request"
+msgstr "Enviar solicitud"
+
+#: .\templates\includes\sixth_section.html:6
+msgid "We work all over <br> the world"
+msgstr "Trabajamos en todo <br> el mundo"
+
+#: .\templates\includes\third_section\third_section.html:13
+msgid ""
+"Our services for the import and export of products of various sizes and "
+"purposes: perishable, small-sized, oversized, super heavy, long cargo."
+msgstr "Nuestros servicios para la importación y exportación de productos de diversos tamaños y propósitos: perecederos, pequeños, sobredimensionados, superpesados, carga larga."

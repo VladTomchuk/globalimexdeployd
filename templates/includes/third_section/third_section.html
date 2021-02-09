@@ -1,0 +1,34 @@
+{% load static %}
+{% load static i18n %}
+
+<div class="title title_sec3 wow bounceInLeft" data-wow-duration="1s">
+    <h2>
+        {% trans 'PRODUCTS' %}
+    </h2>
+</div>
+<div class="rect wow slideInLeft" data-wow-duration="1s">
+
+    <div class="glass_box_sec3 m-0">
+        <p class="col-12 col-md-6">
+            {% blocktrans trimmed %}
+                Our services for the import and export of products of various sizes and purposes: perishable,
+                small-sized,
+                oversized, super heavy, long cargo.
+            {% endblocktrans %}
+        </p>
+        <div class="carousel_container">
+            {% include './inc/_carousel.html' %}
+        </div>
+    </div>
+</div>
+
+<div class="ellipse_top wow bounceInRight" data-wow-duration="3s">
+    <img src="{% static 'img/seccion_3/Ellipse_top.svg' %}" alt="">
+</div>
+<div class="ellipse_right wow bounceInUp" data-wow-duration="4s">
+    <img src="{% static 'img/seccion_3/Ellipse_right.svg' %}" alt="">
+</div>
+<div class="ellipse_bottom wow bounceInLeft" data-wow-duration="3s">
+    <img src="{% static 'img/seccion_3/Ellipse_bottom.svg' %}" alt="">
+</div>
+

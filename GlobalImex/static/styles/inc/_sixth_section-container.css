@@ -1,0 +1,69 @@
+@media only screen and (max-width: 576px) {
+    .sixth_section-container {
+        height: 50vh;
+    }
+
+    .world_chain {
+        padding: 5%;
+    }
+
+    .title_sec6 {
+        margin-bottom: 10%;
+        padding: 0 5%;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) and (orientation: portrait) {
+    .sixth_section-container {
+        height: 50vh !important;
+    }
+
+    .world_chain {
+        padding: 5%;
+    }
+
+    .title_sec6 {
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1200px) and (orientation: portrait) {
+    .sixth_section-container {
+        height: 50vh !important;
+    }
+
+    .world_chain {
+        padding: 5%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (orientation: landscape) {
+    .sixth_section-container {
+        height: 100vh;
+    }
+
+    .world_chain {
+        padding: 5% 15%;
+    }
+
+    .title_sec6 {
+        /*padding-right: 40%;*/
+    }
+}
+
+.world_chain {
+    overflow: hidden;
+}
+
+.world_chain img {
+    width: 90%;
+}
+
+.title_sec6 {
+    text-align: center;
+
+}
+
+.sixth_section-container {
+    overflow: hidden;
+}

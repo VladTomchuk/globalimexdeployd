@@ -1,0 +1,162 @@
+@media only screen and (max-width: 576px) {
+    .first_section-container {
+        height: 100vh;
+        padding: 0 5%;
+        background-image: url("../../img/16_9_vertical_2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .glass {
+        height: 60vh;
+        width: 100%;
+        padding: 10% 0;
+        justify-content: space-between;
+    }
+
+    .cuttext,
+    .no-cuttext {
+        display: none;
+    }
+
+    .glass_text {
+        text-align: left;
+
+        padding: 10%;
+        font-size: 2.5vh;
+
+    }
+
+    .btn_contact_div {
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 1200px) and (orientation: portrait) {
+    .first_section-container {
+        height: 50vh !important;
+        background-attachment: unset !important;
+    }
+
+    .no-cuttext img {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (min-width: 577px) {
+    .first_section-container {
+        height: 100vh;
+        background-image: url("../../img/16_9.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 1%;
+    }
+
+    .glass {
+        height: 90%;
+        width: 40%;
+        padding-right: 2%;
+        padding-bottom: 5%;
+        margin-top: 1.5%;
+        justify-content: space-around;
+    }
+
+    .glass_text {
+        text-align: right;
+        padding-left: 50%;
+        font-size: 1rem;
+    }
+
+    .btn_contact_div {
+        justify-content: flex-end;
+        font-size: 1rem;
+        /*padding-right: 5%;*/
+    }
+
+    .no-cuttext img {
+        width: 150%;
+    }
+
+    .no-cuttext {
+
+        font-size: 3vw;
+    }
+
+    .no-cuttext img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1920px) and (orientation: landscape) {
+    .no-cuttext img {
+        width: 200% !important;
+    }
+}
+
+.glass {
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(128.43% 128.43% at 50.08% -24.37%, rgba(125, 249, 255, 0.63) 6.13%, rgba(26, 153, 181, 0) 99.48%);
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+    overflow: hidden;
+    border-radius: 5px;
+    z-index: 1;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    color: var(--white-text);
+    background-clip: padding-box;
+}
+
+.cuttext {
+    font-weight: bold;
+    font-size: 8vw;
+    color: #001e26;
+    text-align: right;
+}
+
+/*-------------------TEXT UNDER TH CUT OUT----------*/
+.glass_text p {
+    font-weight: 500;
+    color: var(--white-text);
+    text-indent: 0 !important;
+}
+
+.btn_contact_div {
+    display: flex;
+}
+
+.btn_contact-link a:hover {
+    color: var(--electrico) !important;
+    border-color: var(--electrico) !important;
+}
+
+.btn_contact-link a{
+    border: 2px solid var(--white-text);
+    border-radius: 25px;
+    padding: 5px 15px;
+    font-weight: 600;
+    color: var(--white-text);
+    text-transform: uppercase;
+    font-size: 0.8rem !important;
+    transition: 0.2s ;
+}
+
+/*-------------------------------------------------*/
+.right-side {
+    padding: 2% 1%;
+}
+
+.no-cuttext {
+    top: 20%;
+}
+
+.no-cuttext {
+    position: relative;
+    color: var(--white-text);
+}

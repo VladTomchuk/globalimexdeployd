@@ -1,0 +1,58 @@
+{% load static %}
+{% load static i18n %}
+
+<div class="title title_sec4 wow bounceInLeft" data-wow-duration="1s">
+    <h2>
+        {% trans 'Transport' %}
+    </h2>
+</div>
+
+<div class="service-box row m-0">
+    <div class="shipping col-12 col-md-4 wow fadeInUp" data-wow-duration="2s" data-wow-offset="250">
+        <div>
+            <span>
+                <img src="{% static 'img/icons/ship_1.svg' %}" alt="plane_1.svg">
+            </span>
+            <p>
+
+                <b style="color: #7df9ff;">{% trans 'By sea' %}</b><br>
+                {% blocktrans trimmed %}
+                    The advantage of sea transportation of goods is that there are different weight categories, which
+                    makes
+                    this type of transportation incomparable with other types in terms of its dimensions.
+                    Also, this type is the safest.
+                {% endblocktrans %}
+            </p>
+        </div>
+    </div>
+    <div class="shipping col-12 col-md-4 wow fadeInUp" data-wow-duration="2s" data-wow-offset="250">
+        <div>
+            <span>
+                <img src="{% static 'img/icons/truck_1.svg' %}" alt="plane_1.svg">
+            </span>
+            <p>
+                <b style="color: #7df9ff;">{% trans 'Trucking' %}</b> <br>
+                {% blocktrans trimmed %}
+                    One of the most affordable ways to transport cargo anywhere in the world. The advantage is that the
+                    cargo is not reloaded from one vehicle to another, thus it is more protected from damage.
+                {% endblocktrans %}
+            </p>
+        </div>
+    </div>
+    <div class="shipping col-12 col-md-4 wow fadeInUp" data-wow-duration="2s" data-wow-offset="250">
+        <div>
+            <span>
+                <img src="{% static 'img/icons/plane_1.svg' %}" alt="plane_1.svg">
+            </span>
+            <p>
+                <b style="color: #7df9ff;">{% trans 'Air freight' %}</b><br>
+                {% blocktrans trimmed %}
+                    Expedited Transportation of goods, long distances.
+                    The advantage is the shortest transportation time. Possibilities of sending goods by passenger and
+                    cargo
+                    flights. Transportation of goods to remote and hard-to-reach places.
+                {% endblocktrans %}
+            </p>
+        </div>
+    </div>
+</div>

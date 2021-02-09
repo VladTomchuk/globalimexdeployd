@@ -1,0 +1,77 @@
+{% load static %}
+{% load static i18n %}
+
+
+<div class="ellipse_sec7">
+    <img src="{% static 'img/seccion_7/ellipse_sec7.svg' %}" alt="">
+</div>
+<div class="title title_sec7 wow bounceInLeft m-0" data-wow-duration="2s">
+    <h2>
+        {% trans 'Contact us' %}
+    </h2>
+</div>
+<div class="contact_data m-0">
+    <div class="icon phone col-12 col-md-4 wow bounceInLeft" data-wow-duration="2s">
+        <img src="{% static 'img/seccion_7/phone.svg' %}" alt="">
+        <a href="tel:+34698458286">
+            <p>+34 603 593 626</p>
+        </a>
+    </div>
+    <div class="icon email col-12 col-md-4 wow bounceInLeft" data-wow-duration="2s">
+        <img src="{% static 'img/seccion_7/email.svg' %}" alt="">
+        <a href="mailto:etmglobalimex.web@gmail.com">
+            <p>info@etmglobal.imex</p>
+        </a>
+    </div>
+    <div class="icon direction col-12 col-md-4 wow bounceInLeft" data-wow-duration="2s">
+        <img src="{% static 'img/seccion_7/address.svg' %}" alt="">
+        <a href="#" target="_top">
+            <p>08192 Sant Quirze del Vallés,<br> Barcelona</p>
+        </a>
+    </div>
+</div>
+<div class="containers_sec7 m-0">
+    <img class="container_png wow fadeInDown" data-wow-duration="2s"
+         src="{% static 'img/seccion_7/containers_sec7.png' %}" alt="">
+    <img class="wave wow slideInUp" data-wow-duration="1s" src="{% static 'img/seccion_7/Vector_for_footer.svg' %}"
+         alt="">
+    <div id="Form" class="contact_form wow bounceInLeft m-0" data-wow-duration="2s">
+
+        <form action="{% url 'index' %}" method="post">
+            {% csrf_token %}
+            {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+                            {{ message }}
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 form-group">
+                    <input class="form-control" type="text" name="message-name" placeholder='{% trans "Name" %}'
+                           required>
+                </div>
+                <div class="col-12 col-md-6 form-group">
+                    <input class="form-control" type="tel" name="message-phone"
+                           placeholder='{% trans "Telephone" %}' required>
+                </div>
+                <div class="col-12 form-group">
+                    <input class="form-control" type="email" name="message-email"
+                           placeholder='{% trans "Email" %}'
+                           required>
+                </div>
+                <div class="col-12 form-group">
+                                    <textarea class="form-control" rows="5" name="message-comment"
+                                              placeholder='{% trans "Comment" %}'></textarea>
+                </div>
+                <div class="form-group">
+                    <input class="modal_btn" type="submit"
+                           value='{% trans "Send request" %}'>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+

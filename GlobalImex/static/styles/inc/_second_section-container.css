@@ -1,0 +1,233 @@
+.second_section-container {
+    height: 100vh;
+    padding: 0;
+    overflow: hidden;
+    background: rgb(1, 6, 18);
+    background: -moz-linear-gradient(180deg, rgba(1, 6, 18, 1) 40%, rgba(125, 249, 255, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(1, 6, 18, 1) 40%, rgba(125, 249, 255, 1) 100%);
+    background: linear-gradient(180deg, rgba(1, 6, 18, 1) 40%, rgba(125, 249, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010612", endColorstr="#7df9ff", GradientType=1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: var(--media-noche);
+    box-shadow: 3px -49px 15px 11px rgb(1, 6, 18);
+    -webkit-box-shadow: 3px -49px 15px 11px rgb(1, 6, 18);
+    -moz-box-shadow: 3px -49px 15px 11px rgba(1, 6, 18, 1);
+}
+
+
+@media only screen and (max-width: 576px) and (orientation: portrait) {
+    .second_section-container {
+        height: 75vh !important;
+    }
+
+    .title_sec2 {
+        position: relative;
+    }
+
+    div.modal-div {
+        position: relative;
+
+    }
+
+    div.second_section-gradient {
+        background: linear-gradient(360deg, #7DF9FF 10%, var(--media-noche) 90%);
+        z-index: 1;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    div.wave img {
+        /*width: 101%;*/
+        position: inherit;
+        margin-bottom: -1px;
+    }
+
+    div.title_sec2 h2 {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        align-items: start;
+    }
+
+    .preview_text {
+        font-size: 1rem;
+        /*top: 15%;*/
+        padding: 5% 5% 5% 5%;
+    }
+
+    div.second_section-gradient p {
+        display: none;
+    }
+
+    .preview_text,
+    div.modal-div {
+        display: flex !important;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 350px) and (min-height: 550px) and (max-height: 650px) and (orientation: portrait) {
+    .second_section-container {
+        height: 90vh !important;
+    }
+
+    .preview_text{
+        top: 0 !important;
+        font-size: 0.9rem !important;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 400px) and (min-height: 640px) and (max-height: 700px) {
+    .second_section-container {
+        height: 90vh !important;
+    }
+
+    .preview_text{
+        top: 0 !important;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 450px) and (min-height: 700px) and (max-height: 850px) {
+    .preview_text{
+        top: 0 !important;
+    }
+}
+@media only screen and (min-width: 350px) and (max-width: 577px) and (min-height: 740px) and (max-height: 820px) {
+
+
+}
+@media only screen and (min-width: 760px) and (max-width: 1200px) and (orientation: portrait) {
+    .second_section-container {
+        height: 50vh !important;
+    }
+    .title_sec2{
+        position: relative;
+        top: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 30%;
+    }
+
+    div.second_section-gradient {
+        display: contents;
+        overflow: hidden;
+    }
+
+    div.second_section-gradient img {
+        width: 100%;
+        z-index: 1000;
+        position: absolute;
+        bottom: -1px;
+    }
+
+    div.second_section-gradient p {
+        padding: 0 5%;
+        font-size: 0.8rem;
+        column-count: 2 !important; /*количество колонок, на которое хотим разбить текст*/
+        -moz-column-count: 2; /*для мозилы*/
+        -webkit-column-count: 2 !important;; /*для webkit браузеров*/
+        column-gap: 30px; /*отступ между колонками*/
+        -moz-column-gap: 30px;
+        -webkit-column-gap: 30px;
+        margin-bottom: 3rem;
+    }
+
+    div.modal-div {
+        display: none;
+    }
+
+    .preview_text {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 577px) and (orientation: landscape) {
+    div.second_section-gradient {
+        background: linear-gradient(360deg, #7DF9FF 10%, var(--media-noche) 95.59%);
+        z-index: 1;
+        position: relative;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    div.wave img {
+        width: 101%;
+        position: inherit;
+        margin-bottom: -1px;
+        margin-left: -1px;
+    }
+
+    div.title_sec2 h2 {
+        position: relative;
+        width: 40%;
+        text-align: right;
+        align-items: start;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 2px;
+        padding: 5% 0;
+        color: var(--white-text);
+    }
+
+    div.second_section-gradient p {
+        padding:0 10%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+
+        column-count: 2; /*количество колонок, на которое хотим разбить текст*/
+        -moz-column-count: 2; /*для мозилы*/
+        -webkit-column-count: 2; /*для webkit браузеров*/
+        column-gap: 30px; /*отступ между колонками*/
+        -moz-column-gap: 30px;
+        -webkit-column-gap: 30px;
+    }
+
+    div.modal-div {
+        display: none;
+    }
+
+    .preview_text {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1920px) and (orientation: landscape){
+    .second_section-container {
+        height: 80vh !important;
+    }
+
+    div.second_section-gradient p {
+        padding:0 15% !important;
+    }
+}
+
+div.wave {
+    overflow: hidden;
+}
+
+.preview_text {
+    position: absolute;
+    color: var(--white-text);
+}
+
+.second_section-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.second_section-gradient p {
+
+    /*padding-left: 15%;*/
+    color: var(--white-text);
+}
+
+

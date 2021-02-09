@@ -1,17 +1,105 @@
-body, html{
+@import url('inc/_footer.css');
+@import url('inc/_first_section-container.css');
+@import url('inc/_second_section-container.css');
+@import url('inc/_third_section-container.css');
+@import url('inc/_fourth_section-container.css');
+@import url('inc/_fifth_section-container.css');
+@import url('inc/_sixth_section-container.css');
+@import url('inc/_seventh_section-container.css');
+@import url('inc/_modal-window.css');
+@import url('inc/_nav_.css');
+
+:root {
+    --white-text: #ffff;
+    --electrico: #7df9ff;
+    --media-noche: #010612;
+}
+
+body, html {
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: var(--media-noche);
+    scroll-behavior: smooth;
 }
-.div_parent{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+
+.app_container {
+    padding: 0;
 }
-.div{
-    width: 50%;
+
+a {
+    text-decoration-line: none;
+    color: var(--white-text);
 }
-.centred-img {
-    width: 100%;
+
+a:hover{
+    text-decoration: none;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    background-size: contain;
+}
+
+.title h2 {
+    color: var(--white-text);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.preview_text, p {
+    letter-spacing: 1px;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgba(255, 255, 255, .5);
+    border-color: transparent;
+}
+
+.messages li.success {
+    list-style: none;
+    color: var(--electrico);
+}
+
+@-moz-document url-prefix() {
+    @media only screen and (max-width: 576px) {
+        .container_test {
+            width: 90%;
+        }
+
+        .ellipse_right_sec5 {
+            width: 98%;
+        }
+
+        .glass_box_sec5 p {
+            padding: 5% !important;
+        }
+
+        .glass_box_sec5 {
+            margin-top: 15% !important;
+            width: 65% !important;
+        }
+    }
+
+    .glass_box_sec5,
+    .contact_form,
+    .glass_box_sec3,
+    .glass {
+        background: #428f98 !important;
+        opacity: 0.9;
+    }
+
+    .navbar {
+        background: var(--media-noche);
+    }
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 10px !important;
 }
